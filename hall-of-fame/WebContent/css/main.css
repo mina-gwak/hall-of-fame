@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+.header-img {
+	width: 100vw;
+	height: 40vh;
+	background-image: url("../images/header.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.container {
+	position: relative;
+}
+
+.menu-box {
+	text-align: center;
+	padding: 5px 15px;
+	margin-left: auto;
+}
+
+.menu-icon span {
+	display: none;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	content: '';
+	background-image: url("../images/menu-bar.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.menu::before {
+	position: absolute;
+	top: -15px;
+	right: 13px;
+	display: inline-block;
+	content: '';
+	width: 17px;
+	height: 15px;
+	background-image: url("../images/menu-triangle.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;	
+}
+
+.menu {
+	display: none;
+	position: relative;
+	top: 50px;
+	width: fit-content;
+	background-color: #fff;
+	margin-left: auto;
+}
+
+.show {
+	display: block;
+	box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+	z-index : 100;
+}
+
+.menu li {
+	width: 170px;
+	height: fit-content;
+	padding: 10px;
+}
+
+.menu > ul {
+	margin: 0 10px;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+.menu > ul:last-child {
+	border-bottom: none;
+}
+
+.menu > ul > li {
+	font-family: 'BMEULJIRO';
+}
+
+.menu > ul > ul {
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+.menu > ul > ul > li {
+	padding-bottom: 8px;
+}
+
+.content-heading {
+	font-family: 'BMEULJIRO';
+	font-size: 32px;
+	font-weight: 400;
+	text-align: center;
+	padding: 40px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.content-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	background-color: #F8F8F8;
+	margin: 50px 0;
+	transition: background-color 300ms;
+}
+
+.content-link:hover,
+.content-link:active {
+	background-color: #e3e3e3;
+}
+
+.content-link img {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-right: 40px;
+}
+
+.content-desc h3 {
+	font-family: 'BMEULJIRO';
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.content-desc p {
+	font-size: 14px;
+	line-height: 1.3;
+}
