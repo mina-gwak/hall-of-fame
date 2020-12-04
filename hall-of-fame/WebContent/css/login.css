@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.login-content,
+.register-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-title,
+.register-title {
+	font-family: 'BMEULJIRO';
+	font-weight: 400;
+	margin: 50px 0;
+}
+
+.login-form,
+.register-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.login-form label,
+.register-form label {
+	margin-bottom: 10px;
+}
+
+.login-form input,
+.register-form input {
+	width: 400px;
+	height: 50px;
+	background-color: #F8F8F8;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 300ms;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.register-form input {
+	height: 45px;
+}
+
+.login-form input:hover,
+.register-form input:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn {
+	width: 400px;
+	height: 60px;
+	font-family: 'BMEULJIRO';
+	font-size: 20px;
+	background-color: #B4A794;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	margin: 20px 0 10px;
+	transition: background-color 300ms;
+}
+
+.register-form .submit-btn {
+	margin: 20px 0 100px;
+}
+
+.submit-btn:hover {
+	background-color: #9a8f7e;
+}
+
+.sm-link {
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+.sm-link:hover {
+	text-decoration: underline;
+}
+
+p.warning {
+	position: relative;
+	top: -20px;
+	color: 'red';
+	font-size: 14px;
+	margin: 0;
+}

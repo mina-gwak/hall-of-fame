@@ -41,54 +41,7 @@
 <div class="category-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link" data-toggle="modal" data-target="#store-info">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
-			<div class="col-6 col-md-3">
-				<a href="#" class="store-link">
-					<div class="menu-store">
-						<img src="./images/subway.png" alt="서브웨이" />
-						<h2>서브웨이</h2>
-					</div>
-				</a>
-			</div>
+		<%@include file="./categoryDB.jsp" %>
 		</div>
 	</div>
 </div>

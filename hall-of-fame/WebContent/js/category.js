@@ -19,8 +19,6 @@ $(document).ready(function() {
 	
 	var $tags = $(".tag");
 	
-	console.log($tags);
-	
 	$tags.each(function() {
 		$(this).click(function() {
 			$tags.each(function() {

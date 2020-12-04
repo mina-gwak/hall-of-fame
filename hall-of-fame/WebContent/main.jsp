@@ -22,8 +22,8 @@
 						<button class="menu-icon"><span>메뉴</span></button>
 						<div class="menu">
 							<ul>
-								<li><a href="#">로그인</a></li>
-								<li><a href="#">회원가입</a></li>
+								<li><a href="./login.jsp">로그인</a></li>
+								<li><a href="./register.jsp">회원가입</a></li>
 							</ul>
 							<ul>
 								<li>식당 &amp; 카페 찾아보기</li>
@@ -31,6 +31,7 @@
 									<li><a href="./menu.jsp">메뉴별</a></li>
 									<li><a href="./price.jsp">가격대별</a></li>
 									<li><a href="./clickver.jsp">지도로 보기</a></li>
+									<li><a href="./roulette.jsp">룰렛 돌리기</a></li>
 								</ul>
 							</ul>
 							<ul>
