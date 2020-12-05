@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.category-content {
+	margin-bottom: 50px;
+}
+
+.category-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.category-title {
+	font-family: 'BMEULJIRO';
+	font-weight: 400;
+	margin: 30px 0 15px;
+}
+
+.tag-list,
+.roulette-desc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	border-bottom: 1px solid #a8a8a8;
+	padding-bottom: 10px;
+}
+
+.tag {
+	width: fit-content;
+	height: fit-content;
+	border: 1px solid #6D6050;
+	border-radius: 20px;
+	font-size: 14px;
+	vertical-align: middle;
+	line-height: 1;
+	padding: 6px 10px;
+	margin: 5px 5px;
+	cursor: pointer;
+}
+
+.selected {
+	background-color: #6d6050;
+	color: #fff;
+}
+
+.store-link,
+.store-link:hover,
+.store-link:active,
+.store-link:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+.menu-store,
+.price-store {
+	height:fit-content;
+	background-color: #F8F8F8;
+	border-radius: 25px;
+	box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.16);
+	margin: 20px 0;
+}
+
+.menu-store img,
+.price-store img {
+	display: block;
+	height: 180px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 5% 0 0 0;
+	margin: 0 auto;
+}
+
+.menu-store h2,
+.price-store h2 {
+	width: fit-content;
+	font-family: 'BMEULJIRO';
+	font-weight: 400;
+	font-size: 20px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+.modal-wrapper {
+	position: absolute;
+	z-index: 1000;
+}
+
+.modal-title {
+	font-family: 'BMEULJIRO';
+	font-weight: 400;	
+}
+
+#map {
+	margin: 50px auto;
+}
+
+.roulette {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.roulette-btns {
+	margin: 30px 0;
+}
+
+.roulette-btn {
+	display: inline-block;
+	width: 150px;
+	height: fit-content;
+	background-color: #B4A794;
+	font-family: "HUWildflower140", sans-serif;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.roulette-btn:hover {
+	background-color: '#6D6050';
+	color: #fff;
+}
+
+.roulette-btn:first-child {
+	margin-right: 20px;
+}
