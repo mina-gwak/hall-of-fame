@@ -23,7 +23,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="category-header">
-					<h1 class="category-title">룰렛</h1>
+					<h1 class="category-title">오늘 뭐 먹지?</h1>
 					<div class="roulette-desc">
 						<p>룰렛을 돌려 무엇을 먹을지 정해보세요</p>
 					</div>
@@ -52,12 +52,12 @@
         'outerRadius' : 170,
         'segments'       :
             [
-               {'fillStyle' : '#B4A794', 'text' : '한식'},
-               {'fillStyle' : '#6D6050', 'text' : '일식'},
-               {'fillStyle' : '#B4A794', 'text' : '양식'},
-               {'fillStyle' : '#6D6050', 'text' : '분식'},
-               {'fillStyle' : '#B4A794', 'text' : '패스트푸드'},
-               {'fillStyle' : '#6D6050', 'text' : '중식'}
+               {'fillStyle' : '#D9483B', 'text' : '한식'},
+               {'fillStyle' : '#8C3A27', 'text' : '일식'},
+               {'fillStyle' : '#D97B29', 'text' : '양식'},
+               {'fillStyle' : '#D99923', 'text' : '분식'},
+               {'fillStyle' : '#B1BF49', 'text' : '패스트푸드'},
+               {'fillStyle' : '#627326', 'text' : '중식'}
             ],
             'animation' :
             {

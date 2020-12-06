@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,25 +17,20 @@
 </head>
 <body>
 <%@include file="./header.jsp" %>
-
-<form action = "receive.jsp" method="post"> <%-- 이거 여기에 쓰는건지 --%>
-
 <div class="container">
 	<div class="row">
 		<div class="col-12">
 			<div class="register-content">
 				<h1 class="register-title">회원가입</h1>
-				<form class="register-form">
+				<form class="register-form" action="registerDB.jsp" method="POST" onSubmit="return check(this);">
 					<label for="id">아이디</label>
 					<input id="id" type="text" name="id"/>  
 					<label for="password">비밀번호</label>
 					<input id="password" type="password" name="password" /> 
-					<label for="re_password">비밀번호 확인</label>
-					<input id="re_password" type="password" name="re_password"/>
-					<p class="warning" style="display: none">비밀번호가 동일하지 않습니다</p>
+					<label for="rePassword">비밀번호 확인</label>
+					<input id="rePassword" type="password" name="rePassword"/>
 					<label for="nickname">닉네임</label>
 					<input id="nickname" type="text" name="nickname"/>
-					
 					<label for="email">이메일</label>
 					<input id="email" type="email" name="email"/>
 					

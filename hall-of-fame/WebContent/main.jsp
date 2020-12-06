@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +14,19 @@
 <script src="./js/base.js"></script>
 </head>
 <body>
+<%
+	String id = (String) session.getAttribute("id");
+	boolean isLogin = ((id != null) ? true : false);
+%>
+<script>
+$(document).ready(function() {
+	if (<%=isLogin%>) {
+		$(".login-menu").empty();
+		$(".login-menu").append("<li>"+"<%=id%>"+"님 어서오세요</li>");
+		$(".login-menu").append("<li><a href='#' class='logout'>로그아웃</a></li>");
+	}
+});
+</script>
 <div class="wrapper">
 	<header class="header-img">
 		<div class="container">
@@ -21,7 +35,7 @@
 					<div class="menu-box">
 						<button class="menu-icon"><span>메뉴</span></button>
 						<div class="menu">
-							<ul>
+							<ul class="login-menu">
 								<li><a href="./login.jsp">로그인</a></li>
 								<li><a href="./register.jsp">회원가입</a></li>
 							</ul>

@@ -60,16 +60,18 @@
 	background-color: #F8F8F8;
 	border-radius: 25px;
 	box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.16);
+	padding: 10px;
 	margin: 20px 0;
 }
 
 .menu-store img,
 .price-store img {
 	display: block;
+	width: 100%;
 	height: 180px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	padding: 5% 0 0 0;
+	padding: 0;
 	margin: 0 auto;
 }
 
@@ -128,4 +130,15 @@
 
 .roulette-btn:first-child {
 	margin-right: 20px;
+}
+
+.store-menu,
+.store-price {
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.store-price {
+	font-size: 11px;
 }

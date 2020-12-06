@@ -21,11 +21,11 @@
 		<div class="col-12">
 			<div class="login-content">
 				<h1 class="login-title">로그인</h1>
-				<form class="login-form">
+				<form class="login-form" action="loginDB.jsp" method="POST">
 					<label for="id">아이디</label>
-					<input id="id" type="text" />
+					<input id="id" type="text" name="id" />
 					<label for="password">비밀번호</label>
-					<input id="password" type="password" />
+					<input id="password" type="password" name="password" />
 					<button class="submit-btn" type="submit">LOGIN</button>
 					<a href="./register.jsp" class="sm-link">회원가입</a>					
 				</form>
@@ -33,4 +33,5 @@
 		</div>
 	</div>
 </div>
+
 <%@include file="./footer.jsp" %>
