@@ -31,6 +31,7 @@
 				out.println("alert('"+rs.getString("nickname")+"님 어서오세요');");
 				out.println("location.href='main.jsp'");
 				out.println("</script>");
+				break;
 			}
 			else if(rs.getString("userid").equals(id) && rs.getString("password").equals(password) == false) {
 				out.println("<script>");
@@ -40,8 +41,6 @@
 			}
 			else if (rs.getString("userid").equals(id) == false) {
 				out.println("<script>");
-				out.println("alert('"+rs.getString("userid")+"')");
-				out.println("alert('"+id+"')");
 				out.println("alert('존재하지 않는 아이디입니다.');");
 				out.println("location.href='login.jsp'");
 				out.println("</script>");

@@ -25,21 +25,25 @@
 		String sql = "select userid, nickname, email from user";
 		pstmt = con.prepareStatement(sql);
 		ResultSet rs = pstmt.executeQuery();
+		boolean duplicate = false;
 		
 		while(rs.next()) {
 			if(rs.getString("userid").equals(id)) {
+				duplicate = true;
 				out.println("<script>");
 				out.println("alert('아이디가 중복되므로 다른 아이디를 입력해주세요')");
 				out.println("location.href='register.jsp'");
 				out.println("</script>");
 			}
 			if(rs.getString("nickname").equals(nickname)) {
+				duplicate = true;
 				out.println("<script>");
 				out.println("alert('닉네임이 중복되므로 다른 닉네임을 입력해주세요')");
 				out.println("location.href='register.jsp'");
 				out.println("</script>");
 			}
 			if(rs.getString("email").equals(email)) {
+				duplicate = true;
 				out.println("<script>");
 				out.println("alert('이메일이 중복되므로 다른 이메일을 입력해주세요')");
 				out.println("location.href='register.jsp'");
@@ -47,9 +51,11 @@
 			}
 		}
 		
-		sql = "insert into user(userid, password, nickname, email) values('"+id+"','"+password+"','"+nickname+"','"+email+"')";
-		pstmt = con.prepareStatement(sql);
-		pstmt.executeUpdate();
+		if (!duplicate) {
+			sql = "insert into user(userid, password, nickname, email) values('"+id+"','"+password+"','"+nickname+"','"+email+"')";
+			pstmt = con.prepareStatement(sql);
+			pstmt.executeUpdate();	
+		}
 		
 	} catch(SQLException e1) {
 		out.print(e1);

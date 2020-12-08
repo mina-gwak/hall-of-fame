@@ -23,7 +23,7 @@ $(document).ready(function() {
 	if (<%=isLogin%>) {
 		$(".login-menu").empty();
 		$(".login-menu").append("<li>"+"<%=id%>"+"님 어서오세요</li>");
-		$(".login-menu").append("<li><a href='#' class='logout'>로그아웃</a></li>");
+		$(".login-menu").append("<li><a href='./logout.jsp' class='logout'>로그아웃</a></li>");
 	}
 });
 </script>
@@ -49,7 +49,7 @@ $(document).ready(function() {
 								</ul>
 							</ul>
 							<ul>
-								<li><a href="#">자유게시판</a></li>
+								<li><a href="./board.jsp">자유게시판</a></li>
 							</ul>
 						</div>
 					</div>
@@ -102,6 +102,20 @@ $(document).ready(function() {
 						</div>
 					</a>				
 				</div>
+				<div class="col-12">
+					<div class="review-container">
+						<div class="review-box">
+							<strong>띵예의 전당</strong>
+							<h1 class="review-title">REVIEW</h1>
+							<div class="search">
+							<form method="get" action="search.jsp">
+								<input type="text" name="store-name" />
+								<button type="submit" class="search-btn"><span>검색</span></button>
+							</form>
+						</div>			
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 	<%@include file="./footer.jsp" %>

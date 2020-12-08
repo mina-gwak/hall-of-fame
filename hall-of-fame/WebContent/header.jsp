@@ -38,7 +38,7 @@ $(document).ready(function() {
 								</ul>
 							</ul>
 							<ul>
-								<li><a href="#">자유게시판</a></li>
+								<li><a href="./board.jsp">자유게시판</a></li>
 							</ul>
 						</div>
 					</div>
